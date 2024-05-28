@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfESIME.com - Perfil Docente</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <h1>ProfESIME.com</h1>
+        </div>
+    </nav>
+    <main>
+        <h2>Agregar comentario</h2>
+    </main>
+    <div>
+        <label>Materia que imparte: </label>
+        <select id="materia" name="materia" class="select-field" required>
+        <option value="">Selecciona una materia</option>
+        </select>
+    </div>
+    <div>
+        <label>Calificación: </label>
+        <select id="calf" name="calificacion" class="select-field" required>
+        <option value="">Selecciona una calificación</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        </select>
+    </div>
+    <div class="coment-tag">
+        <textarea name="comen" id="comen"></textarea>
+    </div>
+    <div class="bottom-buttons">
+        <button type="button" onclick="location.href='/perfildocentes'">Regresar</button>
+        <button type="button" onclick="location.href='perfildocentes.html'">Guardar</button>
+    </div>
+</body>
+</html>

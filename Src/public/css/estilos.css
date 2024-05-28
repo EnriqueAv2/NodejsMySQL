@@ -1,0 +1,418 @@
+/*Generalidades de los estilos de toda la págaina web*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main h2 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    max-width: 400px;
+}
+
+input[type="email"],
+input[type="password"] {
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.forgot-password {
+    align-self: flex-end;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+    max-width: 400px;
+    width: 100%;
+    text-align: right;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+button {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav .nav-left h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav .nav-right button {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+nav .nav-right button:hover {
+    background-color: #f0f0f0;
+}
+
+main {
+    margin-top: 80px;
+}
+
+.bottom-buttons {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.bottom-buttons button {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 45%;
+    max-width: 200px;
+}
+
+.bottom-buttons button:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-button-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 400px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px; 
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente */
+    margin-top: 20px; /* Ajusta según sea necesario */
+    text-align: center; /* Alinea el texto del label y el input */
+}
+
+.search-container label {
+    margin-right: 5px; /* Reducir el espacio entre la etiqueta y el campo de búsqueda */
+    padding: 10px; /* Ajusta el espacio dentro del label */
+    height: 40px; /* Ajusta la altura del label */
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px; /* Aumenta el ancho del campo de búsqueda */
+    margin-right: 5px; /* Reducir el espacio entre el campo de búsqueda y el botón */
+    height: 40px; /* Ajusta la altura del input */
+}
+
+.search-container button {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    height: 40px; /* Ajusta la altura del botón */
+}
+
+.search-container button:hover {
+    background-color: #f0f0f0;
+}
+
+.table-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 800px;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left; 
+    position: relative; 
+}
+
+td button {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    width: auto; 
+    position: absolute; 
+    right: 10px;
+    top: 50%;
+    transform: translateY(-85%); /* Centra el botón verticalmente */
+}
+
+td button:hover {
+    background-color: #f0f0f0;
+}
+
+.right-container {
+    margin-right: auto; /* Empuja el contenedor a la derecha */
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*Perfil docentes esitlo*/
+.right-container {
+    margin-left: auto; /* Empuja el contenedor a la derecha */
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Ajusta según sea necesario */
+}
+
+.right-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.right-container th, .right-container td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button-container button {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    flex: 1; /* Hace que los botones ocupen el mismo espacio */
+    margin: 0 5px; /* Espacio entre los botones */
+}
+
+.button-container button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Perfil docentes */
+.derecha-cal {
+    position: absolute; /* O fixed para que se mantenga fija en la pantalla */
+    right: 0;
+    top: 50%; /* Ajusta según la ubicación deseada */
+    transform: translateY(-50%); /* Centra verticalmente el div */
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    background-color: #f9f9f9; 
+}
+
+.derecha-com {
+    position: absolute; /* Posicionamiento absoluto */
+    right: 0; /* Alinear a la derecha de la página */
+    top: 100%; /* Colocar debajo del contenido anterior */
+    transform: translateY(-190%); /* Ajustar para estar justo debajo del div anterior */
+    width: 200px; /* Ajustar el ancho según sea necesario */
+    padding: 10px;
+    border: 1px solid #ccc; 
+    background-color: #f9f9f9;
+}
+
+/* Agregar comentario*/
+.select-field {
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.select-field {
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+.coment-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.coment-tag textarea {
+    width: 500%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    height: 300px;
+}
+
+/* Detalle materias */
+.menu-button-container-two {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+.menu-button-container-two button {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 45%;
+}
+.menu-button-container-two button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1,
+    nav .nav-left h1 {
+        font-size: 20px;
+    }
+    
+    main h2 {
+        font-size: 18px;
+    }
+    
+    button,
+    nav .nav-right button,
+    .bottom-buttons button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1,
+    nav .nav-left h1 {
+        font-size: 18px;
+    }
+    
+    main h2 {
+        font-size: 16px;
+    }
+    
+    button,
+    nav .nav-right button,
+    .bottom-buttons button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}

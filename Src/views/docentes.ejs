@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfESIME.com - Menú</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <h1>ProfESIME.com</h1>
+        </div>
+    </nav>
+    <main>
+        <div class="menu-button-container">
+            <button type="button" onclick="location.href='/menu'">Menú</button>
+        </div>
+        <div class="search-container">
+            <p>Búsqueda:</p>
+            <input type="text" id="search" name="search" placeholder="Escribe tu búsqueda...">
+            <button type="submit">Buscar</button>
+        </div>
+        <div class="table-container">
+            <table>
+
+                <thead>
+                    <th>Nombre</th>
+                    <th>Apellido Paterno</th>
+                    <th>Apellido Materno</th>
+                </thead>
+
+                <tbody>
+
+                    <% if (data) { %>
+                        <% for(var i = 0; i < data.length; i++){ %>
+
+                            <tr>
+                                <td><%= data[i].Nombre_Docentes %></td>
+                                <td><%= data[i].Apellido_Paterno_Docentes %></td>
+                                <td><%= data[i].Apellido_Materno_Docentes %></td>
+
+                                <!-- <td><a href="/delete/<%= data[i].id %>" class="button-container">Ir</a></td> -->
+                                <td><a href="/perfildocentes" class="button-container">Ir</a></td>    
+
+                            </tr>
+
+                        <% } %>
+                    <% } %>
+                   
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
