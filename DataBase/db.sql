@@ -1,5 +1,7 @@
-CREATE DATABASE db
+CREATE DATABASE db;
 
+USE db;
+	
 CREATE TABLE usuarios (
 	ID_Usuario INT AUTO_INCREMENT PRIMARY KEY,
     Correo_Institucional_Usuario VARCHAR(50) UNIQUE NOT NULL,
